@@ -4,9 +4,22 @@
    * https://github.com/client9/snowflake2time/
    * Nick Galbreath @ngalbreath
    *
-   * Public Domain -- No copyright
+   * Public Domain -- No copyright -- Cut-n-paste!
    *  But be kind and give credit
    */
+
+  /**
+   * Implementation notes: to simulate unsigned 64-bit behavior in
+   * PHP, bcmath is used.  It's possible on 64-bit php to maybe just
+   * use clever bit juggling, but it would not work in 32-bit.
+   *
+   * WARNING: Only tested on 64-bit php.  Please run unit tests on
+   * 32-bit platforms and report back.
+   *
+   * phpunit snowflake_test.php
+   *
+   */
+
 function utc2snowflake($stamp)
 {
     bcscale(0);

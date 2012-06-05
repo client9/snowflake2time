@@ -2,8 +2,12 @@
 # Twitter Snowflake ID to timestamp (and back)
 # https://github.com/client9/snowflake2time/
 # Nick Galbreath @ngalbreath nickg@client9.com
-# Public Domain -- no copyright -- but be kind and give credit
+# Public Domain -- No Copyright -- Cut-n-Paste!
+#  but be kind and give credit
 #
+
+# Python by default has unlimited integer precision, so this is mostly
+# an exercise in date/time/UTC conversion
 
 import time
 import calendar
