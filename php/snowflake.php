@@ -1,4 +1,12 @@
 <?php
+  /**
+   * Twitter Snowflake ID to timestamp (and back)
+   * https://github.com/client9/snowflake2time/
+   * Nick Galbreath @ngalbreath
+   *
+   * Public Domain -- No copyright
+   *  But be kind and give credit
+   */
 function utc2snowflake($stamp)
 {
     bcscale(0);

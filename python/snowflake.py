@@ -1,4 +1,9 @@
-#!/usr/bin/env python
+
+# Twitter Snowflake ID to timestamp (and back)
+# https://github.com/client9/snowflake2time/
+# Nick Galbreath @ngalbreath nickg@client9.com
+# Public Domain -- no copyright -- but be kind and give credit
+#
 
 import time
 import calendar
@@ -21,6 +26,6 @@ def snowflake2utcms(sf):
     return ((sf >> 22) + 1288834974657)
 
 # really is the best way to get utc timestamp?
-# (minus changing your box to be UTC)
+#   (minus changing your box to be UTC)
 def utcnow():
     calendar.timegm(datetime.datetime.utcnow().timetuple())

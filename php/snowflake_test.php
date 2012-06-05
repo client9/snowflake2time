@@ -1,4 +1,11 @@
 <?php
+  /**
+   * Twitter Snowflake ID to timestamp (and back) TESTS
+   * https://github.com/client9/snowflake2time/
+   * Nick Galbreath @ngalbreath
+   *
+   * Public Domain -- No copyright --  But be kind and give credit
+   */
 require_once 'snowflake.php';
 
 class SnowflakeTest extends PHPUnit_Framework_TestCase {
