@@ -9,6 +9,10 @@
    */
 
   /**
+   * NEWS FLASH: rereading the code for snowflake implies it's
+   *   really 63-bits, so this should work with 64-bit signed integers in
+   *   PHP without using bcmath.  Still need bcmath for 32 bit systems.
+   *
    * Implementation notes: to simulate unsigned 64-bit behavior in
    * PHP, bcmath is used.  It's possible on 64-bit php to maybe just
    * use clever bit juggling, but it would not work in 32-bit.
