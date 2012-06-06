@@ -20,6 +20,8 @@
    *
    */
 
+date_default_timezone_set('UTC');
+
 function utc2snowflake($stamp)
 {
     bcscale(0);
@@ -40,13 +42,11 @@ function snowflake2utcms($sf)
 
 function str2utc($s)
 {
-    date_default_timezone_set('UTC');
     return strtotime($s); // , "%a %b %d %H:%M:%S +0000 %Y");
 }
 
 function str2utcms($s)
 {
-    date_default_timezone_set('UTC');
     return 1000 * strtotime($s); //, "%a %b %d %H:%M:%S +0000 %Y");
 }
 
