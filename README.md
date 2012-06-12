@@ -4,6 +4,15 @@ snowflake2time
 Converts Twitter snowflake ids to UTC timestamps (unix epoch seconds
 or milliseconds) and back.
 
+Snowflake Layout
+
+1  sign bit -- not used, always 0?
+41 bits (milliseconds since epoch) - 1288834974657L
+5  bits datacenter id
+5  bits machine id
+12 bit sequence number
+
+
 Currently in php and python.  Other languages welcome!
 
 
