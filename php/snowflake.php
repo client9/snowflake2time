@@ -42,6 +42,13 @@ function snowflake2utcms($sf)
     return bcadd(bcdiv($sf, '4194304'), '1288834974657');
 }
 
+function snowflake2utcms_nonbc($sf)
+{
+    //Non BCMath version
+    return number_format((($sf/'4194304')+ '1288834974657'),0,'.','');
+}
+
+
 function str2utc($s)
 {
     return strtotime($s); // , "%a %b %d %H:%M:%S +0000 %Y");
