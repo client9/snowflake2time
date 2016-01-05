@@ -24,6 +24,8 @@
    *
    */
 
+date_default_timezone_set('UTC');
+
 function utc2snowflake($stamp)
 {
     bcscale(0);
