@@ -18,7 +18,7 @@ def str2utc(s):
     return calendar.timegm(time.strptime(s, "%a %b %d %H:%M:%S +0000 %Y"))
 
 def utc2snowflake(stamp):
-    return ((stamp * 1000) - 1288834974657) << 22
+    return (int(round(stamp * 1000)) - 1288834974657) << 22
 
 def snowflake2utc(sf):
     return ((sf >> 22) + 1288834974657) / 1000.0
