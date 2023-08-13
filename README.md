@@ -20,7 +20,7 @@ Currently in php and python.  Other languages welcome!
 
 ## The Snowflake algorithm:
 
-https://github.com/twitter/snowflake/blob/master/src/main/scala/com/twitter/service/snowflake/IdWorker.scala
+https://github.com/twitter-archive/snowflake/blob/snowflake-2010/src/main/scala/com/twitter/service/snowflake/IdWorker.scala
 
 Twitter IDs, JSON and Snowflake  2011-06-26
 https://dev.twitter.com/docs/twitter-ids-json-and-snowflake
